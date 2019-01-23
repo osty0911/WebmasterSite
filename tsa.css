@@ -1,0 +1,313 @@
+/*Home Page CSS*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Gadget, sans-serif;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+
+/*Header*/
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: whitesmoke;
+  margin: 0px 0px 0px 0px;
+}
+
+.nav {
+  margin-left: 40%;
+}
+
+ul {
+  position: absolute;
+  right: 40%;
+  left: 40%;
+  padding: 0;
+  display: flex;
+  width: 20%;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 28px;
+  margin-right: 100px;
+  transition: 0.5s;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 23px;
+  font-family: sans-serif;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+ul:hover li a {
+  transform: scale(1.5);
+  opacity: 0.8;
+  filter: blur(5px);
+}
+ul li a:hover {
+  transform: scale(2);
+  opacity: 1;
+  filter: blur(0);
+}
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ef3825;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+ul li a:hover:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/*Home*/
+
+table.top {
+  width: 100%;
+}
+
+.table-boxes {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.class {
+  position: absolute;
+  left: 50px;
+  top: 200px;
+}
+
+.overlaytech {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  transition: 0.5s ease;
+  background-color: #025eaa;
+  overflow: hidden;
+}
+
+.overlaystudent {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #ef3825;
+  overflow: hidden;
+}
+
+.overlayassociate {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+  overflow: hidden;
+}
+
+.container:hover .overlaytech {
+  opacity: 1;
+  bottom: 0;
+  height: 100%;
+}
+
+.container:hover .overlaystudent {
+  opacity: 1;
+  bottom: 0;
+  height: 100%;
+}
+
+.container:hover .overlayassociate {
+  opacity: 1;
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: black;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*Join*/
+section.join {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #025eaa;
+}
+
+.header {
+  font-size: 45px;
+}
+
+.infobig {
+  font-size: 30px;
+}
+
+td.join {
+  font-size: 20px;
+  width: 50%;
+  padding: 10px;
+}
+
+.headermedium {
+  font-size: 30px;
+}
+
+.creed {
+  font-size: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Compete*/
+section.competeback {
+  background-color: black;
+  padding: 30px;
+}
+
+section.compete {
+  color: whitesmoke;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.include {
+  font-size: 20px;
+}
+
+td.competion {
+  font-size: 20px;
+  width: 20%;
+  padding: 5px;
+  background-color: #ef3825;
+}
+
+.imgcompete {
+  width: 90%;
+}
+
+/*online code*/
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/*Lead*/
+section.lead {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+section.footer {
+  list-style: none;
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;
+  background-color: #ef3825;
+  padding: 20px;
+}
+
+.footer a {
+  list-style: none;
+  text-decoration: none;
+  color: whitesmoke;
+}

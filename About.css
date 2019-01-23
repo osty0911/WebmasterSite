@@ -1,0 +1,249 @@
+/*About Page CSS*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Gadget, sans-serif;
+  background-color: #221f20;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: #450d0f;
+}
+
+#logo {
+  margin: 10px;
+  margin-left: 25px;
+  width: 90px;
+}
+
+ul {
+  position: absolute;
+  display: flex;
+  top: 25px;
+  left: 40%;
+  right: 40%;
+  padding-bottom: 30px;
+  width: 90%;
+  height: 15px;
+}
+
+ul li {
+  font-size: 23px;
+  float: left;
+  list-style-type: none;
+  margin-right: 50px;
+  transition: 0.5s;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+  display: block;
+  position: relative;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+ul:hover li a {
+  transform: scale(1.5);
+  opacity: 0.8;
+  filter: blur(5px);
+}
+ul li a:hover {
+  transform: scale(1.75);
+  opacity: 1;
+  filter: blur(0);
+}
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #5f5d5d;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+ul li a:hover:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+p.about {
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+.band {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p.meet {
+  color: #8a1a1f;
+  text-align: center;
+  font-family: Arial, Gadget, sans-serif;
+  font-size: 30px;
+}
+
+.members img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  background-color: #8a1a1f;
+  overflow: hidden;
+}
+
+.container:hover .overlay {
+  opacity: 0.85;
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  bottom: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.instrument {
+  font-size: 20px;
+}
+
+.infocontain {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  color: #f2f2f2;
+}
+
+.title {
+  color: #8a1a1f;
+  font-family: Arial, Gadget, sans-serif;
+  font-size: 40px;
+}
+
+.info {
+  color: #f2f2f2;
+  font-family: Arial, Gadget, sans-serif;
+  font-size: 20px;
+}
+
+.img-left {
+  float: left;
+}
+
+.img-right {
+  float: right;
+}
+
+/*Subscribe*/
+div.subscribe {
+  background-color: #450d0f;
+  height: 200px;
+}
+
+.subscriber {
+  margin-left: 15%;
+}
+
+.mail {
+  color: #5f5d5d;
+  font-size: 30px;
+  padding: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+form {
+  margin-left: auto;
+  margin-right: auto;
+}
+input[type="email"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 16px;
+  display: inline-block;
+  background-color: #5f5d5d;
+  border-style: solid;
+  border-color: #8a1a1f;
+  color: #f2f2f2;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+::placeholder {
+  color: #f2f2f2;
+}
+input[type="submit"] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 16px;
+  display: inline-block;
+  background-color: #5f5d5d;
+  border-style: solid;
+  border-color: #8a1a1f;
+  color: #f2f2f2;
+  font-size: 23px;
+  box-sizing: border-box;
+}
+input[type="submit"]:hover {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 16px;
+  display: inline-block;
+  background-color: #f2f2f2;
+  border-style: solid;
+  border-color: #5f5d5d;
+  color: #8a1a1f;
+  font-size: 23px;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+}
+
+/*Footer*/
+.footer {
+  background-color: #450d0f;
+  height: 55px;
+  color: #5f5d5d;
+  text-align: center;
+  font-size: 18px;
+}

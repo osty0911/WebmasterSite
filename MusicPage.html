@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Phoenix - Music</title>
+    <link href="Music.css" rel="stylesheet" type="text/css" />
+    <script src="Homepage.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="images/Logowhite.png" id="logo"/></a>
+      <nav class="horizontal">
+        <ul>
+          <li><a href="ShowsPage.html">Shows</a></li>
+          <li><a href="PhotosPage.html">Photos</a></li>
+          <li><a href="MusicPage.html">Music</a></li>
+          <li><a href="AboutPage.html">About</a></li>
+          <li><a href="tsa.html" target="_blank">Organizations</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <p class="music">Music</p>
+    <br />
+
+    <div>
+      <table class="music">
+        <tr>
+          <td class="left">
+            <p class="album">New Album Out Now</p>
+            <br /><img src="Music/images/album-cover.jpg" class="img" />
+          </td>
+          <td class="right">
+            <p class="album">Listen to a Sample</p>
+            <br />
+            <audio controls><source src="beat.mp3" type="audio/mp3" /></audio>
+            <br />
+            <br />
+            <p class="listen">Hear the Album</p>
+            <br />
+            <table>
+              <tr>
+                <td>
+                  <a href="https://www.spotify.com/us/" target="_blank">
+                    <img src="music/images/spotify.png" / class="link">
+                  </a>
+                </td>
+                <td>
+                  <a href="https://www.apple.com/music/" target="_blank">
+                    <img src="music/images/apple.png" class="link" />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="subscribe">
+      <p class="mail">Join the mailing list</p>
+      <form class="subscriber">
+        <input type="email" name="email" placeholder="Email Address" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <footer class="footer"><p class="copyright">© 2018 Phoenix</p></footer>
+  </body>
+</html>

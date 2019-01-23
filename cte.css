@@ -1,0 +1,411 @@
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: Arial, Gadget, sans-serif;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px;
+  height: 100vh;
+}
+
+/*Header*/
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: whitesmoke;
+  margin: 0px 0px 0px 0px;
+}
+
+.nav {
+  margin-left: 40%;
+}
+
+.nav ul {
+  position: absolute;
+  right: 40%;
+  left: 40%;
+  padding: 0;
+  display: flex;
+  width: 20%;
+}
+
+.nav ul li {
+  list-style: none;
+  margin-top: 28px;
+  margin-right: 100px;
+  transition: 0.5s;
+}
+
+.nav ul li a {
+  display: block;
+
+  text-decoration: none;
+  padding: 5px;
+  font-size: 23px;
+  font-family: Arial, Gadget, sans-serif;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.nav ul:hover li a {
+  transform: scale(1.5);
+  opacity: 0.8;
+  filter: blur(5px);
+}
+.nav ul li a:hover {
+  transform: scale(2);
+  opacity: 1;
+  filter: blur(0);
+}
+.nav ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff6c13;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+.nav ul li a:hover:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/*Home*/
+
+table.top {
+  width: 100%;
+}
+
+.table-boxes {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container .image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.class {
+  position: absolute;
+  left: 50px;
+  top: 200px;
+}
+
+.overlayprojects {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  transition: 0.5s ease;
+  background-color: #0199a6;
+  overflow: hidden;
+}
+
+.overlayclass {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #ff6c13;
+  overflow: hidden;
+}
+
+.overlayeducation {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #79b700;
+  overflow: hidden;
+}
+
+.container:hover .overlayprojects {
+  opacity: 1;
+  bottom: 0;
+  height: 100%;
+}
+
+.container:hover .overlayclass {
+  opacity: 1;
+  bottom: 0;
+  height: 100%;
+}
+
+.container:hover .overlayeducation {
+  opacity: 1;
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: whitesmoke;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*Profile*/
+
+h1 {
+  margin-top: 60px;
+  text-align: center;
+}
+
+#profiles {
+  display: block;
+  width: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+  margin: 30px;
+}
+
+#profiles .profile {
+  display: block;
+  margin: 10px;
+  width: 450px;
+}
+
+#profiles .profile img {
+  display: block;
+  width: 400px;
+  height: 400px;
+}
+
+.overlayimg1 {
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  background-color: #0199a6;
+  overflow: hidden;
+  width: 400px;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+#profiles .profile:hover .overlayimg1 {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlayimg2 {
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  background-color: #0199a6;
+  overflow: hidden;
+  width: 400px;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+#profiles .profile:hover .overlayimg2 {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlayimg3 {
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  background-color: #0199a6;
+  overflow: hidden;
+  width: 400px;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+#profiles .profile:hover .overlayimg3 {
+  bottom: 0;
+  height: 100%;
+}
+
+.textprofile {
+  color: whitesmoke;
+  font-size: 30px;
+  font-family: Arial, Gadget, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.textprofile p {
+  font-size: 20px;
+}
+
+/*Classes*/
+
+#classes {
+  width: 100%;
+  position: relative;
+  display: block;
+  color: #ff6c13;
+}
+
+#classes .video {
+  text-align: center;
+}
+
+#classes .video video {
+  position: relative;
+  padding: 20px;
+}
+
+.info {
+  margin: 30px;
+  padding: 40px;
+}
+
+.info h2 {
+  text-align: center;
+}
+
+.info ul {
+  margin: 30px;
+  padding: 40px;
+}
+
+.info ul li {
+  font-weight: bold;
+  font-size: 20px;
+  list-style-type: circle;
+}
+
+.info ul li ul li {
+  font-weight: normal;
+  list-style-type: disc;
+}
+
+/*List of schools and classes*/
+
+h2 {
+  text-align: center;
+}
+
+.lists {
+  margin-left: 400px;
+  margin-right: 400px;
+  text-align: center;
+}
+
+.lists table {
+  vertical-align: text-top;
+}
+
+.lists ul {
+  margin: 20px;
+  padding: 40px;
+}
+
+.lists ul li {
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.lists ul li a {
+  color: #ff6c13;
+}
+
+.lists ul li a:hover {
+  color: #ff6c13;
+}
+
+/*Teachers*/
+
+#educators {
+  display: block;
+  margin: 30px;
+  width: 100%;
+  color: #79b700;
+}
+
+#educators img {
+  width: 20%;
+  margin: 10px;
+  float: left;
+}
+
+#educators .paragraph {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 400px;
+}
+
+#educators .paragraph p {
+  font-size: 30px;
+}
+
+/*Footer*/
+
+footer {
+  list-style: none;
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;
+  background-color: #ef3825;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+footer a {
+  list-style: none;
+  text-decoration: none;
+  color: whitesmoke;
+}

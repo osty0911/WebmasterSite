@@ -1,0 +1,227 @@
+/*Shows Page CSS*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Gadget, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-image: url("showsback.jpg");
+  background-size: 100%;
+  opacity: 75%;
+}
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: #450d0f;
+}
+
+#logo {
+  margin: 10px;
+  margin-left: 25px;
+  width: 90px;
+}
+
+ul {
+  position: absolute;
+  display: flex;
+  top: 25px;
+  left: 40%;
+  right: 40%;
+  padding-bottom: 30px;
+  width: 90%;
+  height: 15px;
+}
+
+ul li {
+  font-size: 23px;
+  float: left;
+  list-style-type: none;
+  margin-right: 50px;
+  transition: 0.5s;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+  display: block;
+  position: relative;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+ul:hover li a {
+  transform: scale(1.5);
+  opacity: 0.8;
+  filter: blur(5px);
+}
+ul li a:hover {
+  transform: scale(1.75);
+  opacity: 1;
+  filter: blur(0);
+}
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #5f5d5d;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+ul li a:hover:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+section {
+  margin: 30px;
+  color: #f2f2f2;
+}
+
+.shows {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p.showtitle {
+  color: #f2f2f2;
+  text-align: center;
+  font-family: Arial, Gadget, sans-serif;
+  font-size: 50px;
+  margin-top: 40px;
+}
+
+section table {
+  width: 100%;
+  text-align: center;
+  border-collapse: seperate;
+  border-spacing: 15px;
+}
+
+section table tr td.location {
+  margin-left: 15%;
+  font-size: 140%;
+  text-align: left;
+  color: #f2f2f2;
+}
+
+section table tr td.date {
+  font-size: 150%;
+}
+
+section a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+section a:hover {
+  text-decoration: none;
+  color: #450d0f;
+}
+
+section table tr td.red {
+  background-color: #450d0f;
+  color: #f2f2f2;
+  font-size: 20px;
+}
+
+section table tr td.red:hover {
+  background-color: #5f5d5d;
+  color: #450d0f;
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+
+section table tr td.city {
+  text-align: left;
+}
+
+div.bottom {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+div.subscribe {
+  background-color: #450d0f;
+  height: 200px;
+  bottom: 0;
+}
+
+.subscriber {
+  margin-left: 15%;
+}
+
+.mail {
+  color: #5f5d5d;
+  font-size: 30px;
+  padding: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+form {
+  margin-left: auto;
+  margin-right: auto;
+}
+input[type="email"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 16px;
+  display: inline-block;
+  background-color: #5f5d5d;
+  border-style: solid;
+  border-color: #8a1a1f;
+  color: #f2f2f2;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+::placeholder {
+  color: #f2f2f2;
+}
+input[type="submit"] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 16px;
+  display: inline-block;
+  background-color: #5f5d5d;
+  border-style: solid;
+  border-color: #8a1a1f;
+  color: #f2f2f2;
+  font-size: 23px;
+  box-sizing: border-box;
+}
+input[type="submit"]:hover {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 16px;
+  display: inline-block;
+  background-color: #f2f2f2;
+  border-style: solid;
+  border-color: #5f5d5d;
+  color: #8a1a1f;
+  font-size: 23px;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+}
+
+.footer {
+  background-color: #450d0f;
+  height: 55px;
+  color: #5f5d5d;
+  text-align: center;
+  font-size: 18px;
+}
